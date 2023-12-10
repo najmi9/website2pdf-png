@@ -1,0 +1,5 @@
+public/*.pdf
+public/*.png
+!public/.gitkeep
+data.json
+node_modules
