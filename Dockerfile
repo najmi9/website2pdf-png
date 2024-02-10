@@ -8,6 +8,8 @@ COPY package.json ./
 
 RUN yarn install
 
+RUN npx puppeteer browsers install chrome
+
 COPY . .
 
 EXPOSE 5000
