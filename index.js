@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs/promises');
 
 const app = express();
-const port = 3000;
+const port = 5000;
 const dataFilePath = path.join(__dirname, 'data.json');
 
 app.get('/', (req, res) => {
