@@ -26,6 +26,7 @@ The Web Capture Service is a Node.js application that utilizes Puppeteer and Exp
 
    ```bash
    npm install
+   npx puppeteer browsers install chrome
    ```
 
 ## Usage
