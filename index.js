@@ -68,7 +68,7 @@ async function takeScreenshot(url, imgOutput, pdfOutput) {
   await page.waitForSelector('body');
 
   // want until a div.ytp-cued-thumbnail-overlay-image is loaded
-  await page.waitForSelector('div.ytp-cued-thumbnail-overlay-image', { timeout: 600000 });
+  await page.waitForSelector('div', { timeout: 600000 });
 
   await page.screenshot({ path: imgOutput, fullPage: true, type: 'png'  });
   await page.pdf({ path: pdfOutput, format: 'A4', printBackground: true, });
